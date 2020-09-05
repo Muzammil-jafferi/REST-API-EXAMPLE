@@ -8,6 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require("./routes").default(app);
 
-let server = app.listen(5000, function () {
+app.listen(5000, function () {
   console.log(`APP LISTENING ON PORT 5000!`);
 });

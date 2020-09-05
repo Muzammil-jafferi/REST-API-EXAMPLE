@@ -7,7 +7,6 @@ import {
 } from "./controllers/controller";
 
 export default (app) => {
-  //app.post("/fetch-activejobs", authenticateUser, fetchActiveJobs);
   app.post("/add-category", addCategory);
   app.post("/add-product", addProduct);
   app.get("/categories", fetchCategories);
